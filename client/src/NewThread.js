@@ -7,7 +7,6 @@ function NewThread ({art, currentUser}) {
     const [formErrors, setFormErrors] = useState([]);
     const [talkText, setTT] = useState("")
     const [NTrec, setNTrec] = useState(false)
-    const [typed, setTyped] = useState("")
 
     function postSubmit (e){
         e.preventDefault();
@@ -43,7 +42,6 @@ const NTrecord = (e) => {
   console.log(postBody)
     }
 
-  // setBody([talkText, typed])
     return (
 
       

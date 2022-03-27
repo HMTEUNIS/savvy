@@ -4,7 +4,7 @@ function Discuss({setThread, re}) {
 const [discussions, setDiscussions] = useState ([])
 const [searchTerm, setSearch] = useState ("")
 useEffect(() => {
-    fetch(`http://localhost:3000/discussions`)
+    fetch(`/discussions`)
     
     .then ((res) => res.json())
     .then ((data ) => {
