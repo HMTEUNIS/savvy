@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom"
 import Read from './Read'
@@ -25,7 +24,7 @@ function App() {
   const [data, setData] = useState ([])
 
  // auth
- console.log("is auth", isAuthenticated)
+
 
  useEffect(() => {
   fetch("/me", {
@@ -63,7 +62,6 @@ const particlesLoaded = (container) => {
 };
 
 //
-let threadARt = 1
 
 
 

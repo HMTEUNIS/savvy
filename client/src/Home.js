@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import SignupForm from './SignupForm'
 function Home({currentUser}) {
     return (
         <div className="home">
