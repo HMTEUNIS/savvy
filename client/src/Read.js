@@ -10,7 +10,7 @@ function Read({setter}) {
         event.preventDefault();
         console.log("search", searchTerm)
         if (searchTerm.length > 1) {
-        fetch(`https://core.ac.uk:443/api-v2/articles/search/${searchTerm}?page=1&pageSize=100&metadata=true&fulltext=false&citations=false&similar=false&duplicate=false&urls=true&faithfulMetadata=false&apiKey=Fj0UZxKvqogABQV3ncEiNSMreIkGp1bW%20`)
+        fetch(`https://core.ac.uk:443/api-v2/articles/search/${searchTerm}?page=1&pageSize=100&metadata=true&fulltext=false&citations=false&similar=false&duplicate=false&urls=true&faithfulMetadata=false&apiKey=BKLkomgqtA2N8cVRws9nbYjS1pvFy07d%20`)
         .then ((res) => res.json())
         .then ((data ) => {
              setData(data)
