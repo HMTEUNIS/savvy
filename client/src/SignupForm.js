@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function SignupForm({ setCurrentUser }) {
-    const [err, seterr] = useState("")
+  const [err, seterr] = useState("");
   const [formData, setFormData] = useState({
     user_name: "",
     password: "",
     img_url: "",
-    user_bio: ""
+    user_bio: "",
   });
 
   const handleChange = (e) => {
@@ -27,15 +27,17 @@ function SignupForm({ setCurrentUser }) {
 
     fetch("/signup", configObj).then((resp) => {
       if (resp.ok) {
-        resp.json().then((user) => {
-          console.log(user);
-          setCurrentUser(user);
-        }).then(  
-            window.location.href="/")
+        resp
+          .json()
+          .then((user) => {
+            console.log(user);
+            setCurrentUser(user);
+          })
+          .then((window.location.href = "/"));
       } else {
         resp.json().then((errors) => {
           console.error(errors);
-          seterr(errors)
+          seterr(errors);
         });
       }
     });
@@ -53,7 +55,7 @@ function SignupForm({ setCurrentUser }) {
             onChange={(e) => handleChange(e)}
           />
         </p>
-       
+
         <p>
           <label htmlFor="password">Password </label>
           <input
@@ -64,13 +66,13 @@ function SignupForm({ setCurrentUser }) {
           />
         </p>
         <label htmlFor="img_url">Image URL </label>
-          <input
-            type="img_url"
-            name="img_url"
-            value={formData.img_url}
-            onChange={(e) => handleChange(e)}
-          />
-        
+        <input
+          type="img_url"
+          name="img_url"
+          value={formData.img_url}
+          onChange={(e) => handleChange(e)}
+        />
+
         <p>
           <label htmlFor="username">Bio </label>
           <br />
@@ -86,7 +88,7 @@ function SignupForm({ setCurrentUser }) {
         <p>
           <button type="submit">Sign Up</button>
         </p>
-        
+
         <p>Have an account?</p>
         <p>
           <Link to="/">Log In</Link>

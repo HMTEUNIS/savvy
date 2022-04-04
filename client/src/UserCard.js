@@ -1,15 +1,12 @@
+function UserCard({ poster, comment }) {
+  console.log(comment);
 
-
-function UserCard ({ poster, comment}) {
-
-    console.log(comment)
-    
   return (
-  <div className="userCard"  >
+    <div className="userCard">
       <header>username: {poster.user_name}</header>
       <p>bio: {poster.user_bio}</p>
-
-  </div>)
-};
+    </div>
+  );
+}
 
 export default UserCard;

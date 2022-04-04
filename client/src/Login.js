@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import {useState} from 'react'
+import { useState } from "react";
 function Login({ setCurrentUser, currentUser }) {
-    const [err, seterr] = useState(false)
+  const [err, seterr] = useState(false);
 
   const [formData, setFormData] = useState({
     user_name: "",
@@ -11,7 +11,7 @@ function Login({ setCurrentUser, currentUser }) {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-console.log("form data", formData);
+  console.log("form data", formData);
   const handleSubmit = (e) => {
     const configObj = {
       method: "POST",
@@ -23,15 +23,20 @@ console.log("form data", formData);
     e.preventDefault();
     fetch("/login", configObj).then((resp) => {
       if (resp.ok) {
-        resp.json().then((user) => {
-          setCurrentUser(user);
-        }).then( console.log(currentUser)).then(  
-            window.location.href="/")
+        resp
+          .json()
+          .then((user) => {
+            setCurrentUser(user);
+          })
+          .then(console.log(currentUser))
+          .then((window.location.href = "/"));
       } else {
-        resp.json().then((errors) => {
-          console.error(errors);
-         
-        }).then (seterr(!err));
+        resp
+          .json()
+          .then((errors) => {
+            console.error(errors);
+          })
+          .then(seterr(!err));
       }
     });
   };
@@ -48,7 +53,7 @@ console.log("form data", formData);
             onChange={(e) => handleChange(e)}
           />
         </p>
-      
+
         <p>
           <label htmlFor="password">Password </label>
           <input

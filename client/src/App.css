@@ -1,8 +1,6 @@
-
-
 .navbox {
- margin-left: 30px;
- margin-top: 2px;
+  margin-left: 30px;
+  margin-top: 2px;
   height: 100px;
   width: 140px;
   background-color: "#28a92b";
@@ -17,20 +15,18 @@
 .navbar {
   margin-top: 2%;
   text-align: center;
- 
 }
 
 .core {
   height: 65px;
   width: 105px;
   margin-left: 42px;
- margin-top: 1px;
-
+  margin-top: 1px;
 }
 
 .logo {
   margin-left: 2%;
- 
+
   height: 45%;
   width: 15%;
   background-color: "#28a92b";
@@ -39,8 +35,6 @@
   font-size: 800%;
   color: rgb(206, 248, 206);
   text-shadow: 4px 4px #1dd636dc;
-
-
 }
 .power {
   font-family: monospace;
@@ -48,12 +42,10 @@
   width: 140px;
   text-align: center;
   margin-left: 60px;
-
-  
 }
 
 .main {
-  position: fixed;   
+  position: fixed;
 
   margin-top: 2%;
   left: 55%;
@@ -61,104 +53,94 @@
   transform: translate(-50%, -50%);
   border: 1px solid #1dd63667;
   padding: 10px;
-  height:68%;
-  width: 80%; 
-  background-color:rgba(246, 250, 246, 0.61);
+  height: 68%;
+  width: 80%;
+  background-color: rgba(246, 250, 246, 0.61);
   overflow: auto;
-cursor: pointer;
-z-index: 0;
-  
+  cursor: pointer;
+  z-index: 0;
 }
 
 .vp {
   position: absolute;
   left: 800%;
   top: 5%;
-  height: 100px
+  height: 100px;
 }
 
- .articleCard {
+.articleCard {
   overflow-x: hidden;
   position: relative;
- 
+
   font-family: monospace;
   font-size: 14px;
-  background-color:rgba(246, 250, 246, 0.904);
-
+  background-color: rgba(246, 250, 246, 0.904);
 
   border-bottom: 2px solid #1dd63667;
-  
- }
- .articleTitle {
-   font-size: 16px;
+}
+.articleTitle {
+  font-size: 16px;
+}
+.fullURL {
+  font-size: 14px;
+  color: #1dd66a;
+  text-decoration: underline;
+}
+.dropdown {
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+}
 
- }
-  .fullURL {
-    font-size: 14px;
-    color:   #1dd66a;
-    text-decoration: underline;
+.startThread {
+  border: 1mm solid #1dd63667;
+  background-color: #1dd63667;
+  box-shadow: 3px 3px 4px 1px #1dd63667;
+}
 
-  }
-  .dropdown {
- 
-    top: 100%;
-    left: 0;
-    width: 300px;
-    z-index: 2;
-    
-    
-  }
+.searchbar {
+  border: 1mm ridge #1dd63667;
+  background-color: #1dd63667;
+  box-shadow: 3px 3px 4px 1px #1dd63667;
+}
 
-  .startThread{
-    border: 1mm solid #1dd63667;
-    background-color: #1dd63667;
-    box-shadow: 3px 3px 4px 1px #1dd63667;
-  }
+.startNewThread {
+  border: 1mm solid #d01dd667;
+  background-color: #d01dd667;
+  box-shadow: 3px 3px 4px 1px #d01dd667;
+}
+.veiwExisting {
+  margin-left: 15px;
 
-  .searchbar{
-    border: 1mm ridge #1dd63667;
-    background-color: #1dd63667;
-    box-shadow: 3px 3px 4px 1px #1dd63667;
-  }
+  border: 1mm solid #1dd69867;
+  background-color: #1dd69867;
+  box-shadow: 3px 3px 4px 1px #1dd69867;
+}
 
-  .startNewThread {
-    border: 1mm solid #d01dd667;
-    background-color: #d01dd667;
-    box-shadow: 3px 3px 4px 1px #d01dd667;
-    
-  }
-  .veiwExisting {
-    margin-left: 15px;
-    
-    border: 1mm solid #1dd69867;
-    background-color: #1dd69867;
-    box-shadow: 3px 3px 4px 1px #1dd69867;
-  }
-
-  .postForm {
-    resize: none;
-    height: 200px;
-    width: 100%;
-    font-size: 12px;
-  }
-  .ntt {
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .ntid {
-    font-size: 10px;
-    position: relative;
-  }
-  .nta {
-    margin-top: 3px;
-    
-  }
-  .header {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
-.home{
+.postForm {
+  resize: none;
+  height: 200px;
+  width: 100%;
+  font-size: 12px;
+}
+.ntt {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ntid {
+  font-size: 10px;
+  position: relative;
+}
+.nta {
+  margin-top: 3px;
+}
+.header {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.home {
   height: 100%;
 }
 .discussHead {
@@ -172,39 +154,37 @@ z-index: 0;
 
   font-family: monospace;
   font-size: 16px;
-  background-color:rgba(246, 250, 246, 0.904);
-
+  background-color: rgba(246, 250, 246, 0.904);
 
   border-bottom: 2px solid #1dd63667;
 }
 
-
 .next {
   font-size: 18px;
   margin-left: 750px;
- 
-    top:-52px;
-    display:inline-block;
-    position: relative;
-    bottom: -20px;
-   
-  border: 4px ridge #1dd63667
+
+  top: -52px;
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+
+  border: 4px ridge #1dd63667;
 }
 .previous {
   font-size: 18px;
   margin-left: 648px;
-  position:relative;
-  display:inline-block;
-    top:-20px;
-    bottom: -20px;
-  border: 4px ridge #1dd63667
+  position: relative;
+  display: inline-block;
+  top: -20px;
+  bottom: -20px;
+  border: 4px ridge #1dd63667;
 }
-.discuss_title{
+.discuss_title {
   font-weight: bold;
-  font-size: 20px
+  font-size: 20px;
 }
 
-.discuss_art{
+.discuss_art {
   font-size: 10px;
 }
 
@@ -216,98 +196,88 @@ z-index: 0;
   color: white;
   height: 35px;
   vertical-align: middle;
-
-
-} 
+}
 .dropdown2 {
   padding: 5px;
-  
 }
- .joinbutton {
+.joinbutton {
   border: 1mm solid #d01dd667;
   background-color: #d01dd667;
   box-shadow: 3px 3px 4px 1px #d01dd667;
- }
- .discuss_drop {
-   height: 150px
- }
+}
+.discuss_drop {
+  height: 150px;
+}
 
-
- .thread_art {
+.thread_art {
   border: 1mm solid #1dd6cd67;
   background-color: #1dd7367e;
-  ;
   box-shadow: 3px 3px 4px 1px #d01dd667;
   font-size: 8px;
- }
+}
 
- .cardStats{
+.cardStats {
   background-color: #1dd7367e;
   height: 10px;
-    box-shadow: 3px 3px 4px 1px #d01dd667;
-    font-size: 8px;
-    margin-top: -40px;
-float: right}
+  box-shadow: 3px 3px 4px 1px #d01dd667;
+  font-size: 8px;
+  margin-top: -40px;
+  float: right;
+}
 
-.commenttime{
+.commenttime {
   font-size: 8px;
   font-weight: bold;
   background-color: #1dd7369c;
-  color: rgb(15, 15, 15)
+  color: rgb(15, 15, 15);
 }
 
 .thread_user_img {
-  
-position: absolute;
-z-index: 2;
-   width: 35px; 
-   height: 35px; 
-   border-radius: 50%;
-   vertical-align: middle;
+  position: absolute;
+  z-index: 2;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 .eachPost {
   border: 1px ridge #1dd6cd67;
   background-color: #1dd66a7c;
 }
-.commentDisplay{
-
-background-color:rgba(246, 250, 246, 0.904)
+.commentDisplay {
+  background-color: rgba(246, 250, 246, 0.904);
 }
-.talk{
+.talk {
   margin-top: 10px;
-
-
 }
 
-.micOff{
+.micOff {
   border: 5px ridge #1dd7ce67;
 
-  background-color: #1dd7ce67 
+  background-color: #1dd7ce67;
 }
 
-.micOn{ 
+.micOn {
   border: 5px ridge #cc040483;
-font-weight: bold;
-color: #cc0404fa
+  font-weight: bold;
+  color: #cc0404fa;
 }
 
-.colIMG{ 
-
+.colIMG {
   position: relative;
-  width: 50px; 
-  height: 50px; 
-  overflow: hidden; 
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
   border-radius: 50%;
   cursor: pointer;
 }
-.pw{
+.pw {
   margin-left: 92%;
   margin-top: 5%;
   position: fixed;
-
 }
 
-.veiwDrop{
+.veiwDrop {
   margin-left: 69%;
 
   position: fixed;
@@ -318,10 +288,10 @@ color: #cc0404fa
   background-color: #1dd736e5;
   z-index: 2;
   font-size: 20px;
-  border-radius: 2%
+  border-radius: 2%;
 }
 
-.user_bio{
+.user_bio {
   resize: none;
   height: 200px;
   width: 500px;
@@ -329,30 +299,26 @@ color: #cc0404fa
   overflow: normal;
 }
 
-
-
 .HBSU {
   border: 5px solid #1dd63667;
   background-color: #1dd63667;
   color: #fff;
   font-size: 20px;
   float: right;
-  margin-left: 3px
-
+  margin-left: 3px;
 }
 
-.loggout{
+.loggout {
   background-color: rgba(98, 228, 217, 0.733);
-  border: 2px ridge rgba(98, 228, 217, 0.733)
+  border: 2px ridge rgba(98, 228, 217, 0.733);
 }
 
-.errs{
- font-size: 20px;
- color:rgb(228, 29, 29) ;
-
+.errs {
+  font-size: 20px;
+  color: rgb(228, 29, 29);
 }
 
-.userCard{
+.userCard {
   width: fit-content;
   height: fit-content;
   background-color: rgba(98, 228, 217, 0.876);
@@ -360,7 +326,6 @@ color: #cc0404fa
   margin-left: 35px;
   position: relative;
   z-index: 3;
-  
 }
 .modal {
   font-size: 12px;
@@ -396,30 +361,29 @@ color: #cc0404fa
   border: 1px solid #cfcece;
 }
 
-.news{
-font-size: 30px;
-text-shadow: 2px 2px rgba(98, 228, 217, 0.733);
-color:#1dd636dc;
-text-decoration: underline #1dd636dc;
+.news {
+  font-size: 30px;
+  text-shadow: 2px 2px rgba(98, 228, 217, 0.733);
+  color: #1dd636dc;
+  text-decoration: underline #1dd636dc;
 }
 
-.newstext{
-border-bottom: ridge 2px #1dd636dc;
-width: fit-content;
+.newstext {
+  border-bottom: ridge 2px #1dd636dc;
+  width: fit-content;
 }
 
-.ad{
+.ad {
   background-color: #1dd63667;
-  width:fit-content;
+  width: fit-content;
   float: left;
   box-shadow: 6px 4px #1dd636dc;
-
 }
-.as{
+.as {
   font-size: 30px;
 }
-.verb{
-  color:rgba(0, 0, 0, 0.616);
+.verb {
+  color: rgba(0, 0, 0, 0.616);
   font-style: italic;
   margin-top: -25px;
   margin-left: 70px;
@@ -431,15 +395,13 @@ width: fit-content;
 
   margin-top: -20px;
   position: relative;
-
 }
 
-.delete{
+.delete {
   border: 1mm solid #d01dd667;
   background-color: #d01dd667;
   box-shadow: 3px 3px 4px 1px #d01dd667;
   font-size: 8px;
-  float:right;
-  margin-top: -2.5vh
-
+  float: right;
+  margin-top: -2.5vh;
 }

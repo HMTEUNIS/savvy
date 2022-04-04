@@ -10,9 +10,6 @@
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
   },
-  "dependencies": {
- 
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -30,5 +27,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
   }
 }
